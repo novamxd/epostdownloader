@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Canada ePost Downloader
+// @name         Canada ePost Mail Downloader
 // @namespace    https://secnem.com
 // @version      1.0
 // @description  Loops over all your mail items and attempts to download them to your computer for storage
@@ -8,6 +8,8 @@
 // @icon         https://www.canadapost-postescanada.ca/web/assets/img/icons/cpo.ico
 // @grant        GM.xmlHttpRequest
 // @run-at       document-end
+// @downloadUrl  https://raw.githubusercontent.com/novamxd/epostdownloader/main/index.js
+// @updateUrl    https://raw.githubusercontent.com/novamxd/epostdownloader/main/index.js
 // ==/UserScript==
 (async function() {
     'use strict';
@@ -74,7 +76,7 @@
         document.body.appendChild(a);
         a.style = "display: none";
         return function(data, name) {
-            var blob = new Blob(data, {
+            const blob = new Blob(data, {
                     type: "octet/stream"
                 }),
                 url = window.URL.createObjectURL(blob);
