@@ -18,13 +18,15 @@ A small Tampermonkey script which allows you to download all your mail to your l
 
 ![](https://raw.githubusercontent.com/novamxd/epostdownloader/main/install/import-from-url.png)
 
-5. Press *Install*
+4. Press *Install*
 
 ![](https://raw.githubusercontent.com/novamxd/epostdownloader/main/install/install.png)
 
 # Usage
 ### 1. Go to epost.ca and login
 ### 2. Look for the `Download All Mail` button below filter dropdowns and press it!
+* Tampermonkey may prompt you for permission to make cross-orgin calls, this is expected and please allow it
 * You might need to allow the site to download multiple files (browser will ask you)
 * Might take a few minutes to go through all your mail items (downloads at a pace of 2 per second)
+
 ![](https://raw.githubusercontent.com/novamxd/epostdownloader/main/install/download-all-button.png)
